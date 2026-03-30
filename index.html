@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on-site2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+   
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <div class="navbar">
+                <img src="./images/logo.png" alt="">
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Welcome To <span>Food Lover</span>Restaurant</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="#" class="btn">Book a Table</a>
+        </div>
+        </header>
+        <!-- end header -->
+
+        <!-- start history -->
+        <section id="history">
+            <div class="historytitle">
+                <h1>The Food Lover history</h1>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="historybody">
+                <div class="texty">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, fugit voluptates porro sunt nulla maxime distinctio totam nostrum corporis pariatur consequatur? Consectetur, error obcaecati deleniti explicabo natus ratione tempora doloremque illum inventore magni repellendus incidunt, consequatur quae dolor beatae quasi ad cum, asperiores distinctio! Tenetur pariatur non quisquam odit voluptatibus facere vero obcaecati exercitationem iusto, rem quidem sed neque quas nostrum, quo temporibus doloremque perspiciatis, velit odio assumenda ratione illum ad id adipisci? Provident, adipisci quam omnis fugit quibusdam earum labore laborum laudantium nam odit harum odio voluptatem optio dolorum accusamus autem cum ducimus consequuntur expedita non qui! Quam, sapiente.</p>
+                <a href="#" class="btn1">LEARN MORE</a>
+                </div>
+                <div class="imgy">
+                <img src="./images/about_img.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- end history -->
+
+
+         <!-- start offers -->
+    <section id="offers">
+        <div class="offer">
+            <h1>Our Special Offers</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="offers-wrapper">
+        <div class="items">
+            <div class="item">
+                <img src="./images/offer1.png" alt="">
+                <h3>Quattro Pasta</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dolores obcaecati quas id asperiores numquam.</p>
+                <p><del>$55.00</del> <span>$18.00</span></p>
+            </div>
+             <div class="item">
+                <img src="./images/offer2.png" alt="">
+                <h3>Vegertarion Pasta</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dolores obcaecati quas id asperiores numquam.</p>
+                <p><del>$55.00 </del><span>$18.00</span></p>
+            </div>
+             <div class="item">
+                <img src="./images/offer3.png" alt="">
+                <h3>Gluten-Free Pasta</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dolores obcaecati quas id asperiores numquam.</p>
+                <p><del>$55.00</del> <span>$18.00</span></p>
+            </div>
+
+        </div>
+        <button class="next">&#10095</button>
+        <button class="prev">&#10094</button>
+
+        </div>
+    </section>
+    <!-- end offers -->
+
+
+     <!-- start menu -->
+    <section id="ourmenu">
+        <div class="menutitle">
+            <h1>Our Special Menu</h1>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="menu-items">
+            <div class="menu-left">
+                <script>
+               
+                    for (let i= 0; i<6; i++){
+                        document.write(`
+                         <div class="menu-item">
+                    <img src="${menuItems[i].Image}" alt="">
+                      <div>
+                        <h3>${menuItems[i].name} <span>${menuItems[i].price}</span></h3><hr>
+                        <p>${menuItems[i]. description}.</p>
+                    </div>
+                </div>
+
+                        `)
+                    } 
+                  
+                </script>
+            </div>
+            <div class="menu-right">
+                <script>
+                    for(let i=6;i<12;i++){
+                        document.write(`
+                <div class="menu-item">
+                    <img src="${menuItems[i].Image}" alt="">
+                    <div>
+                        <h3>${menuItems[i].name}<span>${menuItems[i].price}</span></h3><hr>
+                        <p>${menuItems[i].description}.</p>
+                    </div>
+                </div>
+            `)}
+                </script>
+            </div>
+        </div>
+
+            <button class="btn2">EXPLORE FULL MENU</button>
+    </section>
+    <!-- end menu -->
+
+    <!-- start daytime -->
+    <section id="daytime">
+        <div class="icons">
+            <div class="icon">
+                <img src="./images/breckfastIcon.png" alt="">
+                <h2>Breakfast</h2>
+                <p>8:00 am to 10:00 am</p>
+            </div>
+              <div class="icon">
+                <img src="./images/lunchIcon.png" alt="">
+                <h2>Lunch</h2>
+                <p>4:00 pm to 7:00 pm</p>
+            </div>  <div class="icon">
+                <img src="./images/dinnerIcon.png" alt="">
+                <h2>Dinner</h2>
+                <p>9:00 pm to 1:00 am</p>
+            </div> 
+             <div class="icon">
+                <img src="./images/dessertIcon.png" alt="">
+                <h2>Dessert</h2>
+                <p>All day</p>
+            </div>
+        </div>
+    </section>
+    <!-- end daytime -->
+
+    <!-- start gallery -->
+    <section id="gallery">
+        <div class="gallery-title">
+            <h1>Our Food Gallery </h1></div>
+        <div class="gallery-images">
+            <img src="./images/gallery1.jpeg" alt="">
+            <img src="./images/gallery2.jpeg" alt="">
+            <img src="./images/gallery3.jpeg" alt="">
+            <img src="./images/gallery4.jpeg" alt="">
+            <img src="./images/gallery5.jpeg" alt="">
+            <img src="./images/gallery6.jpeg" alt="">
+
+        </div>
+    </section>
+    <!-- end gallery -->
+    <!--start popup box -->
+ <div id="boxContainer">
+    <div id="boxItem">
+        <button id="exit">X</button>
+        <button id="prev2">&#10094;</button>
+        <button id="next2">&#10095;</button>
+    </div>
+</div>
+    <section id="form">
+        <div class="former">
+            <div class="information">
+                <div>       
+                <h2>ADDRESS</h2>
+                <p><i class="fa-sharp fa-solid fa-location-dot"></i>Mansoura, Beside studium , Egypt</p>
+                <p><i class="fa-solid fa-phone"></i>Phone:12345678910</p>
+                <p><i class="fa-regular fa-envelope"></i>Support@foodlover.com</p>
+                </div>
+
+                 <div>
+                <h2>WORKING HOURS</h2>
+                <p>8:00 am to 11:00 pm on Weekdays</p>
+                <p>11:00 am to 1:00 Am on Weekends</p>
+                </div>
+
+                <div>
+                <h2>FOLLOW US</h2>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <form action="" id="form2">
+                <input type="text" placeholder="Full Name" id="name">
+                <div id="nameError" style="color: red;"></div>
+                
+                <input type="email" placeholder="Email Address" id="email">
+                <div id="emailError" style="color: red;"></div>
+
+                <input type="text" placeholder="Subject" id="subject">
+                <div id="subjectError" style="color: red;"></div>
+
+                <textarea name="message" id="message"  placeholder="Message" cols="50" rows="5"></textarea>
+                <div id="messageError" style="color: red;"></div>
+                 <button type="submit" class="btn btn-third">SEND MESSAGE</button>
+                </form>
+            </div>
+    </section>
+     <script src="offers.js"></script>
+    <script src="gallery.js"></script>
+    <script src="form.js"></script>
+</body>
+</html> 
