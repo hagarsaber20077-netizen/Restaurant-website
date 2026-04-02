@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header{
+    background-color: #3b5d50;
+    height: 100vh;
+    width: 100%;
+}
+#header #btn{
+    background-color: orange;
+}
+.hogo{
+    position: relative;
+    transition: 0.5s;
+}
+.btns:hover{
+display: none;
+}
+.higo{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    border-radius: 15px;
+    bottom:0;
+    background: linear-gradient(rgba(128, 128, 128, 0.018),rgba(128, 128, 128, 0.744));
+     transition: 0.5s;
+}
+.hogo:hover .higo{
+     height: 75%; 
+}
+
+ #blog{
+    background-color: rgb(240, 240, 238);
+ }
+ section{
+    background-color: rgb(248, 244, 244);
+ }
